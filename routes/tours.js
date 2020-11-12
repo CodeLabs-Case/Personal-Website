@@ -8,7 +8,7 @@ router.get('/', (req, res, err)=>{
         console.log(err)
     }
 
-    res.sendFile(path.join(__dirname + '/views/index.html'))
+    res.sendFile(path.join('/views/tours.html'))
 })
 
 
