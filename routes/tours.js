@@ -21,6 +21,7 @@ router.get('/all', (req, res, err)=>{
         console.log(err)
     }
 
+    // Testing
     Tours.find({"y": 1919})
     .then(tours => res.json(tours))
     .catch(err => res.status(400).json('Error: ' + err))
