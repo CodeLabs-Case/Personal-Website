@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const path = require('path')
 
-// let Tours = require('../models/tours.model')
+let Tours = require('../models/tours.model')
 
 
 
