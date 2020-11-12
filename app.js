@@ -3,7 +3,13 @@ const mongo = require('mongodb')
 const path = require('path')
 
 
+
 const app = express()
+
+
+
+app.use(express.static('public'))
+
 
 
 const port = process.env.port ||  3000
@@ -17,7 +23,7 @@ app.listen(port, (err)=>{
     console.log("Server is live")
 })
 
-// Temporary routes
+// Temporary routes location
 // Get
 app.get('/', (req, res, err)=>{
     if(err){
