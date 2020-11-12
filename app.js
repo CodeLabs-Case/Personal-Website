@@ -39,7 +39,7 @@ app.get('/', (req, res, err)=>{
     if(err){
         console.log(err)
     }
-    res.sendFile(path.join(__dirname + 'z/views/index.html'))
+    res.sendFile(path.join(__dirname + '/views/index.html'))
 })
 
 // Put
