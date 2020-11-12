@@ -24,7 +24,10 @@ router.get('/all', (req, res, err)=>{
     }
 
     // Testing
-    var contents = fs.readFileSync('test.json');
+    // If you are able to do store and operate on the data in this way then it will be the better option.
+    // You will want to make another project where you connect to the mongodb instance so that you know how to ...
+    // ... when you are working with Elastic.
+    var contents = fs.readFileSync('/var/app/current/routes/test.json');
     var jsonContent = JSON.parse(contents);
     res.send(jsonContent)
 
