@@ -3,7 +3,7 @@ const path = require('path')
 const mongoose = require('mongoose')
 const mongo = require('mongodb')
 
-require('dotenv').config()
+// require('dotenv').config()
 
 
 
@@ -16,17 +16,17 @@ app.use('/static', express.static('public'));
 
 
 
-var http = require('http').Server(app)
-var io = require('socket.io')(http)
-io.on('connection', ()=>{
-    console.log('User is connected')
-})
+// var http = require('http').Server(app)
+// var io = require('socket.io')(http)
+// io.on('connection', ()=>{
+//     console.log('User is connected')
+// })
 
 
 
 // Just in case you will need cross resource sharing
-app.use('cors')
-app.use(express.json())
+// app.use('cors')
+// app.use(express.json())
 
 
 
