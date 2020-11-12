@@ -1,6 +1,7 @@
 const express = require('express')
-const mongo = require('mongodb')
 const path = require('path')
+const mongoose = require('mongoose')
+const mongo = require('mongodb')
 
 
 
@@ -8,11 +9,17 @@ const app = express()
 
 
 
-// app.use(express.static(__dirname + 'public'))
+// This is needed to link/serve the styles and scripts, see their tags in the html.
 app.use('/static', express.static('public'));
 
 
 
+// Connect to the routes directory
+app.use(require('./routes'))
+
+
+
+// I have set the port to 8080 in AWS and that is what is read into this variable and used.
 const port = process.env.port ||  3000
 
 
@@ -24,6 +31,8 @@ app.listen(port, (err)=>{
     console.log("Server is live")
 })
 
+
+
 // Temporary routes location
 // Get
 app.get('/', (req, res, err)=>{
@@ -31,12 +40,6 @@ app.get('/', (req, res, err)=>{
         console.log(err)
     }
     res.sendFile(path.join(__dirname + '/views/index.html'))
-})
-app.get('/tours', (req, res, err)=>{
-    if(err){
-        console.log(err)
-    }
-    res.sendFile(path.join(__dirname + '/views/tours.html'))
 })
 
 // Put
