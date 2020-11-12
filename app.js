@@ -32,12 +32,12 @@ app.use('/static', express.static('public'));
 
 
 // Set up the connection to the MongoDB Atlas instance using Mongoose
-// const uri = process.env.ATLAS_URI
-// mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
-// const connection = mongoose.connection
-// connection.once('open', ()=>{
-//     console.log('Mongoose database connection established')
-// })
+const uri = process.env.ATLAS_URI
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+const connection = mongoose.connection
+connection.once('open', ()=>{
+    console.log('Mongoose database connection established')
+})
 
 
 
