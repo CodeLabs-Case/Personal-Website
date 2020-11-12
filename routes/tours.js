@@ -24,7 +24,7 @@ router.get('/all', (req, res, err)=>{
     }
 
     // Testing
-    var contents = fs.readFileSync('../models/test.json');
+    var contents = fs.readFileSync('test.json');
     var jsonContent = JSON.parse(contents);
     res.send(jsonContent)
 
