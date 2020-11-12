@@ -16,15 +16,15 @@ router.get('/', (req, res, err)=>{
 })
 
 
-router.get('/all', (req, res, err)=>{
-    if(err){
-        console.log(err)
-    }
+// router.get('/all', (req, res, err)=>{
+//     if(err){
+//         console.log(err)
+//     }
 
-    Tours.find()
-    .then(tours => res.json(tours))
-    .catch(err => res.status(400).json('Error: ' + err))
-})
+//     Tours.find()
+//     .then(tours => res.json(tours))
+//     .catch(err => res.status(400).json('Error: ' + err))
+// })
 
 
 
