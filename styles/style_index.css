@@ -1,0 +1,1112 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Header*/
+    .div-header-outter {
+        width: 100%;
+        background-color: #aaa;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .img-test-large-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: none;
+    }
+    .img-test-medium-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: none;
+    }
+    .img-test-small-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+    }
+    .div-header-container-text {
+        width: 100%;
+        height: auto;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        z-index: 2;
+    }
+    .label-label-1 {
+        color: #ccc;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 32px;
+        /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
+    }
+    .label-label-2 {
+        color: #ffad32;
+        
+        font-family: "Dancing Script";
+        font-size: 80px;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+    .div-header-text {
+        width: 100%;
+        height: auto;
+        max-width: auto;
+        color: #ccc;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 24px;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        max-width: 600px;
+    }
+
+
+
+
+    
+    /* Body */
+    .div-body-typeone {
+        background-color: #F5D058;
+    
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    [class^='body-typeone-1'] {
+        /* background-color: #aaa; */
+        width: 100%;
+        height: auto;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        justify-self: center;
+        align-self: center;
+    }
+    [class^='body-typeone-2'] {
+        /* background-color: #aaa; */
+        width: 100%;
+        height: auto;
+    
+        grid-row: 2;
+        grid-column: 1;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        justify-self: center;
+        align-self: center;
+    }
+    [class^='body-typeone-3'] {
+        /* background-color: #aaa; */
+        width: 100%;
+        height: auto;
+    
+        grid-row: 3;
+        grid-column: 1;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        justify-self: center;
+        align-self: center;
+    }
+    [class^='div-body-typeone-1-text'] {
+        max-width: 300px;
+        
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        opacity: 1;
+        margin-top: 0px;
+    }
+    [class^='div-body-typeone-2-text'] {
+        max-width: 300px;
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        opacity: 1;
+        margin-top: 0px;
+    }
+    [class^='div-body-typeone-3-text'] {
+        max-width: 300px;
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        opacity: 1;
+        margin-top: 0px;
+    }
+    .label-body-typeone-title {
+        font-size: 32px;
+        color: #996515;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
+    }
+    .label-body-typeone-body {
+        font-size: 18px;
+        color: #fff;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+    
+    .div-body-typetwo {
+        background-color: #C0C0C0;
+    }
+    .div-body-wrapper-typetwo-1 {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .div-body-wrapper-typetwo-2 {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .div-body-wrapper-typetwo-1 img{
+        display: none;
+
+        /* max-width: 100%;
+        height: auto;
+
+        grid-row: 1;
+        grid-column: 1;
+
+        justify-self: end;
+        align-self: center; */
+    }
+    .div-body-wrapper-typetwo-2 img{
+        display: none;
+
+        /* max-width: 100%;
+        height: auto;
+
+        grid-row: 1;
+        grid-column: 1;
+
+        justify-self: start;
+        align-self: center; */
+    }
+    .div-body-typetwo-1-text{
+        font-size: 22px;
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        color: #996515;
+    
+        /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
+
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        max-width: 300px;
+    }
+    .div-body-typetwo-2-text{
+        font-size: 22px;
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        color: #996515;
+        
+        /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
+
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        max-width: 300px;
+    }
+
+
+
+
+
+    /* Footer */
+    /* This code is within the style_all file */
+}
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Header */
+    .div-header-outter {
+        width: 100%;
+        background-color: #aaa;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .img-test-large-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: none;
+    }
+    .img-test-medium-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+    }
+    .img-test-small-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: none;
+    }
+    .div-header-container-text {
+        width: 100%;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        z-index: 2;
+    }
+    .label-label-1 {
+        color: #ccc;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 32px;
+        /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
+    }
+    .label-label-2 {
+        color: #ffad32;
+        
+        font-family: "Dancing Script";
+        font-size: 80px;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+    .div-header-text {
+        width: 100%;
+        height: auto;
+        max-width: auto;
+        color: #ccc;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 24px;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        max-width: 600px;
+    }
+    
+
+
+
+    
+    /* Body */
+    .div-body-typeone {
+        /* background-color: #F5D058; */
+
+        background-image: url('../images/friends-table-small-2.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        
+
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+   
+    [class^='body-typeone-1'] {
+        /* background-color: #aaa; */
+        width: 100%;
+        height: 200px;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        justify-self: center;
+        align-self: center;
+    }
+    [class^='body-typeone-2'] {
+        /* background-color: #aaa; */
+        width: 100%;
+        height: 200px;
+    
+        grid-row: 2;
+        grid-column: 1;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        justify-self: center;
+        align-self: center;
+    }
+    [class^='body-typeone-3'] {
+        /* background-color: #aaa; */
+        width: 100%;
+        height: 200px;
+    
+        grid-row: 3;
+        grid-column: 1;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        justify-self: center;
+        align-self: center;
+    }
+    [class^='div-body-typeone-1-text'] {
+        max-width: 300px;
+
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        /* transition: filter 500ms; */
+    }
+    /* [class^='div-body-typeone-1-text']:hover {
+        filter: opacity(0.5)
+    } */
+    [class^='div-body-typeone-2-text'] {
+        max-width: 300px;
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        opacity: 1;
+
+        /* transition: filter 500ms; */
+    }
+    /* [class^='div-body-typeone-2-text']:hover {
+        filter: opacity(0.5)
+    } */
+    [class^='div-body-typeone-3-text'] {
+        max-width: 300px;
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        /* transition: filter 500ms; */
+    }
+    /* [class^='div-body-typeone-3-text']:hover {
+        filter: opacity(0.5)
+    } */
+    .label-body-typeone-title {
+        font-size: 32px;
+        color: #e89f33;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+    .label-body-typeone-body {
+        font-size: 18px;
+        color: #fff;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+    
+    .div-body-typetwo {
+        background-color: #C0C0C0;
+    }
+    .div-body-wrapper-typetwo-1 {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .div-body-wrapper-typetwo-2 {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .div-body-wrapper-typetwo-1 img {
+        max-width: 100%;
+        height: auto;
+
+        grid-row: 1;
+        grid-column: 2;
+
+        justify-self: center;
+        align-self: center;
+
+        opacity: 0.8;
+
+        z-index: 0;
+    }
+    .div-body-wrapper-typetwo-2 img{
+        max-width: 100%;
+        height: auto;
+
+        grid-row: 1;
+        grid-column: 1;
+
+        justify-self: center;
+        align-self: center;
+
+        opacity: 0.8;
+
+        z-index: 0;
+    }
+    .div-body-typetwo-1-text{
+        font-size: 26px;
+        font-family: "Bilbo Swash Caps";
+        color: #996515;
+        
+        /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
+
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        max-width: 300px;
+
+        z-index: 1;
+    }
+    .div-body-typetwo-2-text{
+        font-size: 26px;
+        font-family: "Bilbo Swash Caps";
+        color: #996515;
+        
+        /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
+
+        grid-row: 1;
+        grid-column: 2;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        max-width: 300px;
+
+        z-index: 1;
+    }
+
+
+
+
+
+    /* Footer */
+    /* This code is within the style_all file */
+}
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Header */
+    .div-header-text {
+        width: 100%;
+        height: auto;
+        max-width: auto;
+
+        font-size: 24px;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    
+        padding: 0px;
+        margin-left: 30px;
+
+        max-width: 600px;
+    }
+    .label-label-1 {
+        color: #ccc;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 32px;
+        /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
+    }
+    .label-label-2 {
+        color: #ffad32;
+        
+        font-family: "Dancing Script";
+        font-size: 80px;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+    .div-header-text {
+        width: 100%;
+        height: auto;
+        max-width: auto;
+        color: #ccc;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 24px;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        max-width: 600px;
+    }
+    .img-test-large-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: none;
+    }
+    .img-test-medium-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+    }
+    .img-test-small-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: none;
+    }
+    
+
+
+
+    
+    /* Body */
+    .div-body-typeone {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        background-image: url('../images/friends-table-small-2.jpg');
+
+        grid-column-gap: 10px;
+    }
+    [class^='div-body-typeone-1-text'] {
+        max-width: 300px;
+        text-align: center;
+    }
+    [class^='div-body-typeone-2-text'] {
+        max-width: 300px;
+        text-align: center;
+    }
+    [class^='div-body-typeone-3-text'] {
+        max-width: 300px;
+        text-align: center;
+    }
+    [class^='body-typeone-1'] {
+        /* background-color: #aaa; */
+        width: 100%;
+        height: 200px;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        justify-self: center;
+        align-self: center;
+    }
+    [class^='body-typeone-2'] {
+        /* background-color: #aaa; */
+        width: 100%;
+        height: 200px;
+    
+        grid-row: 1;
+        grid-column: 2;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        justify-self: center;
+        align-self: center;
+    }
+    [class^='body-typeone-3'] {
+        /* background-color: #aaa; */
+        width: 100%;
+        height: 200px;
+    
+        grid-row: 1;
+        grid-column: 3;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    
+        justify-self: center;
+        align-self: center;
+    }
+    .label-body-typeone-title {
+        font-size: 32px;
+        color: #e89f33;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+    .label-body-typeone-body {
+        font-size: 18px;
+        color: #fff;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+
+    .div-body-typetwo-1-text {
+        font-family: "Bilbo Swash Caps";
+
+        max-width: auto;
+        text-align: center;
+    }
+    .div-body-typetwo-2-text {
+        font-family: "Bilbo Swash Caps";
+
+        max-width: auto;
+        text-align: center;
+    }
+
+
+
+
+
+    /* Footer */
+    /* This code is within the style_all file */
+}
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Header */
+    .div-header-text {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    
+        font-size: 24px;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+    
+        padding: 0px;
+        margin-left: 30px;
+    }
+    .label-label-1 {
+        color: #ccc;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 32px;
+        /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
+    }
+    .label-label-2 {
+        color: #ffad32;
+        
+        font-family: "Dancing Script";
+        font-size: 110px;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+    .div-header-text {
+        width: 100%;
+        height: auto;
+        max-width: auto;
+        color: #ccc;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-size: 24px;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        max-width: 600px;
+    }
+    .img-test-large-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: inherit;
+    }
+    .img-test-medium-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: none;
+    }
+    .img-test-small-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: none;
+    }
+
+
+
+
+
+    /* Body */
+    .div-body-typeone {
+        grid-column-gap: 30px;
+
+        background-image: url('../images/friends-table-large-2.jpg');
+    }
+    [class^='div-body-typeone-1-text']  {
+        max-width: 300px;
+        text-align: center;
+    }
+    [class^='div-body-typeone-2-text'] {
+        max-width: 300px;
+        text-align: center;
+    }
+    [class^='div-body-typeone-3-text'] {
+        max-width: 300px;
+        text-align: center;
+    }
+    .label-body-typeone-title {
+        font-size: 38px;
+        color: #e89f33;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+    .label-body-typeone-body {
+        font-size: 24px;
+        color: #fff;
+        
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    }
+
+    .div-body-typetwo-1-text {
+        font-family: "Bilbo Swash Caps";
+
+        max-width: 300px;
+        text-align: center;
+    }
+    .div-body-typetwo-2-text {
+        font-family: "Bilbo Swash Caps";
+
+        max-width: 300px;
+        text-align: center;
+    }
+    
+
+
+
+
+
+    /* Footer */
+    /* This code is within the style_all file */
+}
+/*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*/
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Header */
+    .div-header-text {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    
+        font-size: 24px;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        justify-self: center;
+        align-self: center;
+    
+        padding: 0px;
+        margin-left: 30px;
+    }
+    .img-test-large-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: inherit;
+    }
+    .img-test-medium-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: none;
+    }
+    .img-test-small-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This is the property: value that will make the image cutoff instead of scale down */
+
+        grid-row: 1;
+        grid-column: 1;
+        
+        justify-self: center;
+        align-self: center;
+
+        display: none;
+    }
+
+
+
+
+
+    /* Body */
+    .div-body-typeone {
+        grid-column-gap: 50px;
+    }
+
+
+
+
+
+    /* Footer */
+    /* This code is within the style_all file */
+}
