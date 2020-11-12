@@ -1,6 +1,6 @@
 const express = require('express')
 const mongo = require('mongodb')
-
+const path = require('path')
 
 
 const app = express()
@@ -23,13 +23,13 @@ app.get('/', (req, res, err)=>{
     if(err){
         console.log(err)
     }
-    res.sendFile('/index.html')
+    res.sendFile(path.join(__dirname + '/index.html')
 })
 app.get('/tours', (req, res, err)=>{
     if(err){
         console.log(err)
     }
-    res.sendFile('/tours.html')
+    res.sendFile(path.join(__dirname + '/tours.html')
 })
 
 // Put
