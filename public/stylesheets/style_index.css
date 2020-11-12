@@ -6,6 +6,8 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 .div-one label{
+    color: #ffffff;
+    
     grid-row: 1;
     grid-column: 2;
 
