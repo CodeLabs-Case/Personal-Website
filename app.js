@@ -28,7 +28,7 @@ app.use(require('./routes'))
 
 
 // Set up the connection to the MongoDB Atlas instance using Mongoose
-const uri = process.env.Atlas_URI
+const uri = process.env.ATLAS_URI
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
 const connection = mongoose.connection
 connection.once('open', ()=>{
