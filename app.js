@@ -25,6 +25,12 @@ app.get('/', (req, res, err)=>{
     }
     res.send('Home')
 })
+app.get('/tours', (req, res, err)=>{
+    if(err){
+        console.log(err)
+    }
+    res.send('Tours')
+})
 
 // Put
 
