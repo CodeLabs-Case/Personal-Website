@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const mongoose = require('mongoose')
 const mongo = require('mongodb')
+const cors = require('cors')
 
 // require('dotenv').config()
 
@@ -25,18 +26,18 @@ app.use('/static', express.static('public'));
 
 
 // Just in case you will need cross resource sharing
-// app.use('cors')
-// app.use(express.json())
+app.use('cors')
+app.use(express.json())
 
 
 
 // Set up the connection to the MongoDB Atlas instance using Mongoose
-// const uri = process.env.ATLAS_URI
-// mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
-// const connection = mongoose.connection
-// connection.once('open', ()=>{
-//     console.log('Mongoose database connection established')
-// })
+const uri = process.env.ATLAS_URI
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+const connection = mongoose.connection
+connection.once('open', ()=>{
+    console.log('Mongoose database connection established')
+})
 
 
 
