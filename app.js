@@ -23,13 +23,13 @@ app.get('/', (req, res, err)=>{
     if(err){
         console.log(err)
     }
-    res.send('Home')
+    res.sendFile('/index.html')
 })
 app.get('/tours', (req, res, err)=>{
     if(err){
         console.log(err)
     }
-    res.send('Tours')
+    res.sendFile('/tours.html')
 })
 
 // Put
