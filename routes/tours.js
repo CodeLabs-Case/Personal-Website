@@ -17,13 +17,13 @@ router.get('/', (req, res, err)=>{
     res.sendFile(path.join('/var/app/current/views/tours.html'))
 })
 
-router.get('/0', (req, res, err)=>{
+router.get('/:id', (req, res, err)=>{
     if(err){
         console.log(err)
     }
 
-    // let param = req.params.id
-    // let id = parseInt(param, 10)
+    let param = req.params.id
+    let id = parseInt(param, 10)
 
     // Testing
     // If you are able to do store and operate on the data in this way then it will be the better option.
@@ -31,7 +31,7 @@ router.get('/0', (req, res, err)=>{
     // ... when you are working with Elastic.
     var contents = fs.readFileSync('/var/app/current/models/database.json');
     var jsonContent = JSON.parse(contents);
-    res.send(jsonContent.tours[0])
+    res.send(jsonContent.tours[id])
 
     // Tours.find()
     // .then(tours => res.json(tours))

@@ -4,29 +4,29 @@
             "location": "north",
             "brewries": [
                 { 
-                    "name1": "name1",
-                    "name2": "name2",
-                    "nameN": "nameN"
+                    "name1": "value",
+                    "name2": "value",
+                    "nameN": "value"
                 }
 
             ],
-            "capacity": "total1",
-            "remaining": "remaining1",
-            "price": "amount1"
+            "capacity": "value",
+            "remaining": "value",
+            "price": "value"
         },
         {
             "location": "south",
             "brewries": [
                 { 
-                    "name1": "name3",
-                    "name2": "name4",
-                    "nameN": "nameN"
+                    "name1": "value",
+                    "name2": "value",
+                    "nameN": "value"
                 }
 
             ],
-            "capacity": "total2",
-            "remaining": "remaining2",
-            "price": "amount2"
+            "capacity": "value",
+            "remaining": "value",
+            "price": "value"
         }
     ]
 }
