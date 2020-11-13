@@ -25,7 +25,8 @@ router.get('/:id', (req, res, err)=>{
     let param = req.params.id
     let id = parseInt(param, 10)
 
-    // Testing
+    
+    
     // If you are able to do store and operate on the data in this way then it will be the better option.
     // You will want to make another project where you connect to the mongodb instance so that you know how to ...
     // ... when you are working with Elastic.
@@ -43,7 +44,8 @@ router.get('/all', (req, res, err)=>{
         console.log(err)
     }
     
-    // Testing
+    
+    
     // If you are able to do store and operate on the data in this way then it will be the better option.
     // You will want to make another project where you connect to the mongodb instance so that you know how to ...
     // ... when you are working with Elastic.
