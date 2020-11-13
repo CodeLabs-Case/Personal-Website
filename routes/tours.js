@@ -78,6 +78,37 @@ router.route('/add').post((req, res, err)=>{
 
     }
 
+    var contents = fs.readFileSync('/var/app/current/models/database.json');
+    var jsonContent = JSON.parse(contents);
+
+    jsonContent.tours.push(
+        {
+        "location": "new",
+            "brewries": [
+                { 
+                    "name1": "new",
+                    "name2": "new",
+                    "nameN": "new"
+                }
+
+            ],
+            "capacity": "new",
+            "remaining": "new",
+            "price": "new"
+        }
+    )
+
+    /// Write the data to a text file
+    // Convert the data structure to a string
+    var jsonString = JSON.stringify(jsonContent, null, 2)
+    fs.writeFileSync(file, jsonString, err => {
+        if (err) {
+            console.log('Error writing file', err)
+        } else {
+            console.log('Successfully wrote file')
+        }
+    })
+
     res.send("Post")
 })
 
