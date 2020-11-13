@@ -22,6 +22,9 @@ router.get('/:id', (req, res, err)=>{
         console.log(err)
     }
 
+    var contents = fs.readFileSync('/var/app/current/models/database.json');
+    var jsonContent = JSON.parse(contents);
+
     var param = req.params.id
     if(param == 'all'){
         res.send(jsonContent)
@@ -36,8 +39,7 @@ router.get('/:id', (req, res, err)=>{
     // If you are able to do store and operate on the data in this way then it will be the better option.
     // You will want to make another project where you connect to the mongodb instance so that you know how to ...
     // ... when you are working with Elastic.
-    var contents = fs.readFileSync('/var/app/current/models/database.json');
-    var jsonContent = JSON.parse(contents);
+    
 
     if(id == 'all'){
         res.send(jsonContent)
