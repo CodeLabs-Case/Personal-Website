@@ -1,0 +1,32 @@
+{
+    "tours" : [
+        {
+            "location": "north",
+            "brewries": [
+                { 
+                    "name1": "name1",
+                    "name2": "name2",
+                    "nameN": "nameN"
+                }
+
+            ],
+            "capacity": "total1",
+            "remaining": "remaining1",
+            "price": "amount1"
+        },
+        {
+            "location": "south",
+            "brewries": [
+                { 
+                    "name1": "name3",
+                    "name2": "name4",
+                    "nameN": "nameN"
+                }
+
+            ],
+            "capacity": "total2",
+            "remaining": "remaining2",
+            "price": "amount2"
+        }
+    ]
+}

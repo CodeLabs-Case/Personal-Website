@@ -1,7 +1,20 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                                                          //
+// This project was a test to launch a simple application on AWS Elastci with an Express backend.                           //
+// Everything works but when I try to retrieve data from the remote MongoDB instance it gives me a 504 Time Out.            //
+// The connection is good, and everything is coded properly, this is probably a network configurarion issue.                //
+// There is an alternate way that I have went because time was short when I wrote this, and that is to store a file ...     //
+// ... within the project to act as a local database instance. This works for smaller projects.                             //
+// I have kept the code for the MongoDB functionality for future reference however.                                         //
+//                                                                                                                          //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 const express = require('express')
 const path = require('path')
-const mongoose = require('mongoose')
-const mongo = require('mongodb')
+// const mongoose = require('mongoose')
+// const mongo = require('mongodb')
 // const cors = require('cors')
 
 // require('dotenv').config()
@@ -32,12 +45,12 @@ app.use('/static', express.static('public'));
 
 
 // Set up the connection to the MongoDB Atlas instance using Mongoose
-const uri = process.env.ATLAS_URI
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
-const connection = mongoose.connection
-connection.once('open', ()=>{
-    console.log('Mongoose database connection established')
-})
+// const uri = process.env.ATLAS_URI
+// mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
+// const connection = mongoose.connection
+// connection.once('open', ()=>{
+//     console.log('Mongoose database connection established')
+// })
 
 
 
