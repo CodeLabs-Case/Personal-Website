@@ -22,8 +22,8 @@ router.get('/:id', (req, res, err)=>{
         console.log(err)
     }
 
-    let param = req.params.id
-    if(id == 'all'){
+    var param = req.params.id
+    if(param == 'all'){
         res.send(jsonContent)
     } else {
         let id = parseInt(param, 10)
