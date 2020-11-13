@@ -25,6 +25,10 @@ const app = express()
 
 
 
+app.use(bodyParser.json());
+
+
+
 // This is needed to link/serve the styles and scripts, see their tags in the html.
 app.use('/static', express.static('public'));
 
