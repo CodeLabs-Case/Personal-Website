@@ -79,22 +79,22 @@ router.route('/add').post((req, res)=>{
     let contents = fs.readFileSync(file);
     let jsonContent = JSON.parse(contents);
 
-    jsonContent.tours.push(
-        {
-            "location": "new",
-            "brewries": [
-                { 
-                    "name1": "new",
-                    "name2": "new",
-                    "nameN": "new"
-                }
+    // jsonContent.tours.push(
+    //     {
+    //         "location": "new",
+    //         "brewries": [
+    //             { 
+    //                 "name1": "new",
+    //                 "name2": "new",
+    //                 "nameN": "new"
+    //             }
 
-            ],
-            "capacity": "new",
-            "remaining": "new",
-            "price": "new"
-        }
-    )
+    //         ],
+    //         "capacity": "new",
+    //         "remaining": "new",
+    //         "price": "new"
+    //     }
+    // )
 
     res.json(jsonContent)
 
