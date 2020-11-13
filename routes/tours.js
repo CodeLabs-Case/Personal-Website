@@ -51,7 +51,7 @@ router.get('/all', (req, res, err)=>{
     // ... when you are working with Elastic.
     var contents = fs.readFileSync('/var/app/current/models/database.json');
     var jsonContent = JSON.parse(contents);
-    res.send(jsonContent.tours)
+    res.send(jsonContent)
 
     // Tours.find()
     // .then(tours => res.json(tours))
