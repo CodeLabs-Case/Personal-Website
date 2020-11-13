@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                                                          //
-// This project was a test to launch a simple application on AWS Elastci with an Express backend.                           //
+// This project was a test to launch a simple application on AWS Elastic with an Express backend.                           //
 // Everything works but when I try to retrieve data from the remote MongoDB instance it gives me a 504 Time Out.            //
 // The connection is good, and everything is coded properly, this is probably a network configurarion issue.                //
 // There is an alternate way that I have went because time was short when I wrote this, and that is to store a file ...     //

@@ -73,6 +73,15 @@ router.get('/:id', (req, res, err)=>{
 // })
 
 
+router.post('/add', (req, res, err)=>{
+    if(err){
+
+    }
+
+    res.send("Post")
+})
+
+
 
 
 
