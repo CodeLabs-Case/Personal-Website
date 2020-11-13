@@ -74,7 +74,8 @@ router.route('/:id').get((req, res, err)=>{
 
 
 router.route('/add').post((req, res)=>{
-    var contents = fs.readFileSync('/var/app/current/models/database.json');
+    let file = '/var/app/current/models/database.json'
+    var contents = fs.readFileSync(file);
     var jsonContent = JSON.parse(contents);
 
     jsonContent.tours.push(
