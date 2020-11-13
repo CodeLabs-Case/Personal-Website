@@ -17,21 +17,41 @@ router.get('/', (req, res, err)=>{
     res.sendFile(path.join('/var/app/current/views/tours.html'))
 })
 
-
-router.get('/all', (req, res, err)=>{
+router.get('/:id', (req, res, err)=>{
     if(err){
         console.log(err)
     }
+
+    let param = req.params.id
+    let id = parseInt(param, 10)
 
     // Testing
     // If you are able to do store and operate on the data in this way then it will be the better option.
     // You will want to make another project where you connect to the mongodb instance so that you know how to ...
     // ... when you are working with Elastic.
-    var contents = fs.readFileSync('/var/app/current/routes/database.json');
+    var contents = fs.readFileSync('/var/app/current/models/database.json');
     var jsonContent = JSON.parse(contents);
-    res.send(jsonContent.tours[0])
+    res.send(jsonContent.tours[id])
 
-    // Tours.find({"y": 1919})
+    // Tours.find()
+    // .then(tours => res.json(tours))
+    // .catch(err => res.status(400).json('Error: ' + err))
+})
+
+router.get('/all', (req, res, err)=>{
+    if(err){
+        console.log(err)
+    }
+    
+    // Testing
+    // If you are able to do store and operate on the data in this way then it will be the better option.
+    // You will want to make another project where you connect to the mongodb instance so that you know how to ...
+    // ... when you are working with Elastic.
+    var contents = fs.readFileSync('/var/app/current/models/database.json');
+    var jsonContent = JSON.parse(contents);
+    res.send(jsonContent)
+
+    // Tours.find()
     // .then(tours => res.json(tours))
     // .catch(err => res.status(400).json('Error: ' + err))
 })
