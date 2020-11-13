@@ -25,7 +25,7 @@ const app = express()
 
 
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 
 
