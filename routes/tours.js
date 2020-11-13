@@ -108,8 +108,6 @@ router.route('/add').post((req, res)=>{
     //         console.log('Successfully wrote file')
     //     }
     // })
-
-    res.json(jsonContent)
 })
 
 
