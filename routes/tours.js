@@ -73,11 +73,7 @@ router.route('/:id').get((req, res, err)=>{
 // })
 
 
-router.route('/add').post((req, res, err)=>{
-    if(err){
-
-    }
-
+router.route('/add').post((req, res)=>{
     var contents = fs.readFileSync('/var/app/current/models/database.json');
     var jsonContent = JSON.parse(contents);
 
@@ -109,7 +105,7 @@ router.route('/add').post((req, res, err)=>{
         }
     })
 
-    res.send("Post")
+    res.json("Post")
 })
 
 
