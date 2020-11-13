@@ -81,7 +81,7 @@ router.route('/add').post((req, res)=>{
 
     jsonContent.tours.push(
         {
-        "location": "new",
+            "location": "new",
             "brewries": [
                 { 
                     "name1": "new",
@@ -96,18 +96,20 @@ router.route('/add').post((req, res)=>{
         }
     )
 
+    res.json(jsonContent)
+
     /// Write the data to a text file
     // Convert the data structure to a string
-    let jsonString = JSON.stringify(jsonContent, null, 2)
-    fs.writeFileSync(file, jsonString, err => {
-        if (err) {
-            console.log('Error writing file', err)
-        } else {
-            console.log('Successfully wrote file')
-        }
-    })
+    // let jsonString = JSON.stringify(jsonContent, null, 2)
+    // fs.writeFileSync(file, jsonString, err => {
+    //     if (err) {
+    //         console.log('Error writing file', err)
+    //     } else {
+    //         console.log('Successfully wrote file')
+    //     }
+    // })
 
-    res.json("Post")
+    res.json(jsonContent)
 })
 
 
