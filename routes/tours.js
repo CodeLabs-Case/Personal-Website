@@ -2,8 +2,8 @@ const router = require('express').Router()
 const path = require('path')
 const fs = require('fs')
 
-let Tours = require('../models/tours.model')
-const { json } = require('body-parser')
+// let Tours = require('../models/tours.model')
+// const { json } = require('body-parser')
 
 
 
