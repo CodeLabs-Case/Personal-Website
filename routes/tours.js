@@ -74,7 +74,7 @@ router.route('/:id').get((req, res, err)=>{
 // })
 
 
-router.route('/add').post((req, res)=>{
+router.post('/add', (req, res)=>{
     let file = '/var/app/current/models/database.json'
     let contents = fs.readFileSync(file);
     let jsonContent = JSON.parse(contents);

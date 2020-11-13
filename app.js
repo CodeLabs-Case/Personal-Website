@@ -92,12 +92,13 @@ app.get('/', (req, res, err)=>{
     res.sendFile(path.join(__dirname + '/views/index.html'))
 })
 
-app.post('/add', (req, res)=>{
-    res.send('post')
-})
+
 
 // Put
 
 // Post
+app.post('/add', (req, res)=>{
+    res.send('post')
+})
 
 // Delete
