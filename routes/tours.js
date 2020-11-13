@@ -7,7 +7,7 @@ const { json } = require('body-parser')
 
 
 
-router.get('/', (req, res, err)=>{
+router.route('/').get((req, res, err)=>{
     if(err){
         console.log(err)
     }
@@ -17,7 +17,7 @@ router.get('/', (req, res, err)=>{
     res.sendFile(path.join('/var/app/current/views/tours.html'))
 })
 
-router.get('/:id', (req, res, err)=>{
+router.route('/:id').get((req, res, err)=>{
     if(err){
         console.log(err)
     }
@@ -73,7 +73,7 @@ router.get('/:id', (req, res, err)=>{
 // })
 
 
-router.post('/add', (req, res, err)=>{
+router.route('/add').post((req, res, err)=>{
     if(err){
 
     }
