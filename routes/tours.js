@@ -23,7 +23,13 @@ router.get('/:id', (req, res, err)=>{
     }
 
     let param = req.params.id
-    let id = parseInt(param, 10)
+    if(id == 'all'){
+        res.send(jsonContent)
+    } else {
+        let id = parseInt(param, 10)
+        res.send(jsonContent.tours[id])
+    }
+    
     
 
     
