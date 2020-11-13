@@ -22,10 +22,11 @@ router.route('/:id').get((req, res, err)=>{
         console.log(err)
     }
 
-    var contents = fs.readFileSync('/var/app/current/models/database.json');
-    var jsonContent = JSON.parse(contents);
+    let file = '/var/app/current/models/database.json'
+    let contents = fs.readFileSync(file);
+    let jsonContent = JSON.parse(contents);
 
-    var param = req.params.id
+    let param = req.params.id
     if(param == 'all'){
         res.send(jsonContent)
     } else {
@@ -75,8 +76,8 @@ router.route('/:id').get((req, res, err)=>{
 
 router.route('/add').post((req, res)=>{
     let file = '/var/app/current/models/database.json'
-    var contents = fs.readFileSync(file);
-    var jsonContent = JSON.parse(contents);
+    let contents = fs.readFileSync(file);
+    let jsonContent = JSON.parse(contents);
 
     jsonContent.tours.push(
         {
@@ -97,7 +98,7 @@ router.route('/add').post((req, res)=>{
 
     /// Write the data to a text file
     // Convert the data structure to a string
-    var jsonString = JSON.stringify(jsonContent, null, 2)
+    let jsonString = JSON.stringify(jsonContent, null, 2)
     fs.writeFileSync(file, jsonString, err => {
         if (err) {
             console.log('Error writing file', err)
