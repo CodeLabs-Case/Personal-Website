@@ -31,7 +31,7 @@ router.get('/:id', (req, res, err)=>{
     // ... when you are working with Elastic.
     var contents = fs.readFileSync('/var/app/current/models/database.json');
     var jsonContent = JSON.parse(contents);
-    res.send(jsonContent.tours[id])
+    res.send(jsonContent.tours[0])
 
     // Tours.find()
     // .then(tours => res.json(tours))
@@ -49,7 +49,7 @@ router.get('/all', (req, res, err)=>{
     // ... when you are working with Elastic.
     var contents = fs.readFileSync('/var/app/current/models/database.json');
     var jsonContent = JSON.parse(contents);
-    res.send(jsonContent)
+    res.send(jsonContent.tours)
 
     // Tours.find()
     // .then(tours => res.json(tours))
