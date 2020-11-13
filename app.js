@@ -25,6 +25,7 @@ const app = express()
 
 
 
+// This is the new way of parseing JSON instead of using body-parser which seems to have been depreciated
 app.use(express.json());
 
 
@@ -34,6 +35,9 @@ app.use('/static', express.static('public'));
 
 
 
+// ABSTRACTED NETWORKING FUNCTIONALITY
+// This is socket.io which abstracts the networking functionality of the site to make it easier to ...
+// ... work with, it is akin to what mongoose is for mongodb
 // var http = require('http').Server(app)
 // var io = require('socket.io')(http)
 // io.on('connection', ()=>{
@@ -42,12 +46,14 @@ app.use('/static', express.static('public'));
 
 
 
+// CROSS ORIGIN RESOURCE SHARING FUNCTIONALITY
 // Just in case you will need cross resource sharing
 // app.use('cors')
 // app.use(express.json())
 
 
 
+// REMOTE DATABASE FUNTIONALITY
 // Set up the connection to the MongoDB Atlas instance using Mongoose
 // const uri = process.env.ATLAS_URI
 // mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
@@ -84,6 +90,10 @@ app.get('/', (req, res, err)=>{
         console.log(err)
     }
     res.sendFile(path.join(__dirname + '/views/index.html'))
+})
+
+app.post('/add', (req, res)=>{
+    res.send('post')
 })
 
 // Put
