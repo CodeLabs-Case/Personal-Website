@@ -262,35 +262,35 @@ $(document).ready(()=>{
 
   // Portfolio
   $(".ul-sitemap-portfolio li:nth-child(2)").on("click", ()=>{
-    document.location.href = "index.html" + "#" + 1
+    document.location.href = "/" + "#" + 1
   })
   $(".ul-sitemap-portfolio li:nth-child(3)").on("click", ()=>{
-    document.location.href = "index.html" + "#" + 2
+    document.location.href = "/" + "#" + 2
   })
   $(".ul-sitemap-portfolio li:nth-child(4)").on("click", ()=>{
-    document.location.href = "index.html" + "#" + 3
+    document.location.href = "/" + "#" + 3
   })
 
   // Projects
   $(".ul-sitemap-projects li:nth-child(2)").on("click", ()=>{
-    document.location.href = "view_projects.html" + "#" + 1
+    document.location.href = "/projects" + "#" + 1
   })
   $(".ul-sitemap-projects li:nth-child(3)").on("click", ()=>{
-    document.location.href = "view_projects.html" + "#" + 2
+    document.location.href = "/projects" + "#" + 2
   })
   $(".ul-sitemap-projects li:nth-child(4)").on("click", ()=>{
-    document.location.href = "view_projects.html" + "#" + 3
+    document.location.href = "/projects" + "#" + 3
   })
 
   //Education
   $(".ul-sitemap-education li:nth-child(2)").on("click", ()=>{
-      document.location.href = "view_education.html" + "#" + 1
+    document.location.href = "/education" + "#" + 1
   })
   $(".ul-sitemap-education li:nth-child(3)").on("click", ()=>{
-    document.location.href = "view_education.html" + "#" + 2
+    document.location.href = "/education" + "#" + 2
   })
   $(".ul-sitemap-education li:nth-child(4)").on("click", ()=>{
-    document.location.href = "view_education.html" + "#" + 3
+    document.location.href = "/education" + "#" + 3
   })
 
   //About
