@@ -295,12 +295,12 @@ $(document).ready(()=>{
 
   //About
   $(".ul-sitemap-about li:nth-child(2)").on("click", ()=>{
-    document.location.href = "view_about.html" + "#" + 1
+    document.location.href = "/about" + "#" + 1
   })
   $(".ul-sitemap-about li:nth-child(3)").on("click", ()=>{
-    document.location.href = "view_about.html" + "#" + 2
+    document.location.href = "/about" + "#" + 2
   })
   $(".ul-sitemap-about li:nth-child(4)").on("click", ()=>{
-    document.location.href = "view_about.html" + "#" + 3
+    document.location.href = "/about" + "#" + 3
   })
 });
