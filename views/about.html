@@ -5,11 +5,11 @@
         <!-- JQuery library via a Content Delivery Network (CDN) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Cascading Style Sheet -->
-        <link rel="stylesheet" href="./styles/style_all.css">
+        <link rel="stylesheet" href="/static/stylesheets/style_all.css">
         <!-- Page specific CSS -->
-        <link rel="stylesheet" href="./styles/style_projects.css">
+        <link rel="stylesheet" href="/static/stylesheets/style_about.css">
         <!-- Favicon -->
-        <link rel="icon" href="./Images/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon"/>
         <!-- Make the page render in a mobile friendly way -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CDN for the Slider -->
@@ -17,7 +17,8 @@
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <title>Projects</title>
+
+        <title>About</title>
     </head>
 
     <body>
@@ -29,23 +30,23 @@
                         <a href="index.html" class='a-label'>BLACK BOX</a>
                         <div class="div-img">
                             <div class='animatecover'></div>
-                            <img class="img-blackbox" src="./Images/black-box-header-img2.png" alt="Image Unavailable">
+                            <img class="img-blackbox" src="/static/images/black-box-header-img2.png" alt="Image Unavailable">
                         </div>
                     </div>
                 </div>
                 <div class="div-navbar">
                     <ul class="ul-navbar">
                         <li>
-                            <a href="index.html">Portfolio</a>
+                            <a href="/">Portfolio</a>
                         </li>
                         <li>
-                            <a href="view_projects.html">Projects</a>
+                            <a href="/projects">Projects</a>
                         </li>
                         <li>
-                            <a href="view_education.html">Education</a>
+                            <a href="/education">Education</a>
                         </li>
                         <li>
-                            <a href="view_about.html">About</a>
+                            <a href="/about">About</a>
                         </li>
                     </ul>
                 </div>
@@ -61,16 +62,20 @@
                     <!-- Slide 1 -->
                     <div class="div-body-container1-1">
                         <div class="div-container-text1-1">
-                            <h1>Future</h1>
+                            <h1>Summary</h1>
                             <p>
-                                I am currently in the planning stage for an application that is being developed
-                                with Electron designed to parse information from data which can be formatted
-                                to a specified type for use where the data was collected by webscraping.
+                                I graduated from Stanly Early College High School with both a highschool diploma and associates
+                                degree in Simulation and Game Development. I then transfered to the University of North Carolina 
+                                at Charlotte where I graduated with a BS in Computer Science.
+                                <br>
+                                I have a great interest and passion in and for the scientific method and using technology to augment
+                                our capabilities in science. I have a high personal drive and am very self motivated to always learn
+                                and discover new things.
                             </p>
                         </div>
-                        <img class="img-body-mob" src="./Images/Content Images/test_mobileTop.png" alt="">
+                        <img class="img-body-mob" src="/static/images/test_mobileTop.png" alt="">
                         <div class="div-container-img1-1">
-                            <img src="./Images/Content Images/testR.png" alt="">
+                            <img src="/static/images/testR.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -78,17 +83,16 @@
                 <div class="div-swiper2">
                     <div class="div-body-container2-1">
                         <div class="div-container-text2-1">
-                            <h1>Current</h1>
+                            <h1>Work</h1>
                             <p>
-                                I am currently working on utilizing Puppeteer within Node.js to collect data from various websites
-                                via the webscraping functionality that Puppeteer provides. I am storing various kinds of data in 
-                                different databases that I manage and then analyze that data using data science techniques and 
-                                methodologies.
+                                My work experience is in freelance web development where I work closely with clients to determine 
+                                their requirements for a website or web application and enact those designs into a streamlined, reactive
+                                and user friendly product.
                             </p>
                         </div>
-                        <img class="img-body-mob" src="./Images/Content Images/test_mobileMid.png" alt="">
-                        <div class="div-container-img2-1">
-                            <img src="./Images/Content Images/testL.png" alt="">
+                        <img class="img-body-mob" src="/static/images/test_mobileMid.png" alt="">
+                        <div class="div-container-img1-2">
+                            <img src="/static/images/testR.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -96,20 +100,17 @@
                 <div class="div-swiper3">
                     <div class="div-body-container3-1">
                         <div class="div-container-text3-1">
-                            <h1>Past</h1>
+                            <h1>History</h1>
                             <p>
-                                Final Project/Web Application using MERN (MongoDB, Express, React, Node.js) for my bacholers in Computer Science.
-                                <br>
-                                <br>
-                                Websites for both business and personal use.
-                                <br>
-                                <br>
-                                Image editing for the websites I created, and much more.
+                                I have a background in game and application development where I have created real world
+                                websites, one for a business and for my portfolio. I also have a firm grasp of the scientific method
+                                and various methods of software engineering. I am also fluid in technical communication and
+                                coorespondance with clients and coworkers.
                             </p>
                         </div>
-                        <img class="img-body-mob" src="./Images/Content Images/test_mobileBot.png" alt="">
-                        <div class="div-container-img3-1">
-                            <img src="./Images/Content Images/testR.png" alt="">
+                        <img class="img-body-mob" src="/static/images/test_mobileBot.png" alt="">
+                        <div class="div-container-img1-1">
+                            <img src="/static/images/testR.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -128,7 +129,7 @@
                 <div class="div-footer-sub2">
                     <ul class="ul-sitemap-portfolio">
                         <li>
-                            <a href="index.html">Portfolio</a>
+                            <a href="/">Portfolio</a>
                         </li>
                         <li>Websites</li>
                         <li>Design</li>
@@ -136,7 +137,7 @@
                     </ul>
                     <ul class="ul-sitemap-projects">
                         <li>
-                            <a href="view_projects.html">Projects</a>
+                            <a href="/projects">Projects</a>
                         </li>
                         <li>Future</li>
                         <li>Current</li>
@@ -144,7 +145,7 @@
                     </ul>
                     <ul class="ul-sitemap-education">
                         <li>
-                            <a href="view_education.html">Education</a>
+                            <a href="/education">Education</a>
                         </li>
                         <li>Bachelors</li>
                         <li>Associates</li>
@@ -152,7 +153,7 @@
                     </ul>
                     <ul class="ul-sitemap-about">
                         <li>
-                            <a href="view_about.html">About</a>
+                            <a href="/about">About</a>
                         </li>
                         <li>Summary</li>
                         <li>Work</li>
@@ -162,12 +163,12 @@
                     <ul class="ul-linkslist">
                         <li>
                             <a href="https://www.twitter.com/blackBoxMod" target="_blank">
-                                <img src="./Images/twitter-45x45_grey.png" alt="Image Unavailable">
+                                <img src="/static/images/twitter-45x45_grey.png" alt="Image Unavailable">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UC7fgI9oKhcayHr56T5QS4Vg" target="_blank">
-                                <img src="./Images/youtube-45x45_grey.jpg" alt="Image Unavailable">
+                                <img src="/static/images/youtube-45x45_grey.jpg" alt="Image Unavailable">
                             </a>
                         </li>
                     </ul>
@@ -177,10 +178,9 @@
         </div>
 
         <!-- Page specific JQuery -->
-        <script type="text/javascript" src="./scripts/jquery_projects.js"></script>
-        
+        <script type="text/javascript" src="/static/javascripts/jquery_about.js"></script>
         <!-- JQuery for all pages -->
-        <script type="text/javascript" src="./scripts/jquery_all.js"></script>
+        <script type="text/javascript" src="/static/javascripts/jquery_all.js"></script>
 
     </body>
 </html>
