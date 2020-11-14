@@ -1,0 +1,15 @@
+.ul-navbar li:nth-child(1) a{
+    border-bottom: white solid 3px;
+    opacity: 0.8;
+}
+
+
+
+
+
+#link {
+    color: #003780;
+}
+#link:hover {
+    color: #FFFFFF;
+}
