@@ -25,8 +25,9 @@ const app = express()
 
 
 
-// This is the new way of parseing JSON instead of using body-parser which seems to have been depreciated
+// This is the new way of parseing JSON instead of using body-parser
 // app.use(express.json());
+// This is the old way of parseing JSON with body-parser
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -88,20 +89,16 @@ app.listen(port, (err)=>{
 
 // Temporary routes location
 // Get
-app.get('/', (req, res, err)=>{
-    if(err){
-        console.log(err)
-    }
-    res.sendFile(path.join(__dirname + '/views/index.html'))
-})
-
-
+// app.get('/', (req, res, err)=>{
+//     if(err){
+//         console.log(err)
+//     }
+//     // This path works because it is in the server/app file, the router files need to have an absolute path
+//     res.sendFile(path.join(__dirname + '/views/index.html'))
+// })
 
 // Put
 
 // Post
-app.post('/add', (req, res)=>{
-    res.send('post')
-})
 
 // Delete

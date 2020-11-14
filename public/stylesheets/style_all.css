@@ -13,3 +13,12 @@
 
     justify-self: center;
 }
+.div-one label a{
+    text-decoration: none;
+    color: #718dff;
+    
+    grid-row: 1;
+    grid-column: 2;
+
+    justify-self: center;
+}
