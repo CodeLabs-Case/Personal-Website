@@ -84,21 +84,3 @@ app.listen(port, (err)=>{
     }
     console.log("Server is live")
 })
-
-
-
-// Temporary routes location
-// Get
-// app.get('/', (req, res, err)=>{
-//     if(err){
-//         console.log(err)
-//     }
-//     // This path works because it is in the server/app file, the router files need to have an absolute path
-//     res.sendFile(path.join(__dirname + '/views/index.html'))
-// })
-
-// Put
-
-// Post
-
-// Delete
