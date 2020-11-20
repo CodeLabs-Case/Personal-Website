@@ -1,16 +1,3 @@
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                                                          //
-// This project was a test to launch a simple application on AWS Elastic with an Express backend.                           //
-// Everything works but when I try to retrieve data from the remote MongoDB instance it gives me a 504 Time Out.            //
-// The connection is good, and everything is coded properly, this is probably a network configurarion issue.                //
-// There is an alternate way that I have went because time was short when I wrote this, and that is to store a file ...     //
-// ... within the project to act as a local database instance. This works for smaller projects.                             //
-// I have kept the code for the MongoDB functionality for future reference however.                                         //
-//                                                                                                                          //
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 const express = require('express')
 const path = require('path')
 // const mongoose = require('mongoose')
@@ -18,6 +5,16 @@ const path = require('path')
 // const cors = require('cors')
 
 // require('dotenv').config()
+
+
+
+// Because dotenv won't work in the production code and will make the server not run, check to make sure ...
+// ... that you are in the development version
+if(process.env.NODE_ENV !== 'production'){
+    require('dotenv').config()
+}
+const stripSecretKey = process.env.STRIPE_SECRET_KEY
+const stripPublicKey = process.env.STRIPE_PUBLIC_KEY
 
 
 
@@ -74,7 +71,7 @@ app.use(require('./routes'))
 
 
 // I have set the port to 8080 as an Environment Variable in AWS and that is what is read into this variable and used.
-const port = process.env.port ||  3000
+const port = process.env.port ||  4000
 
 
 
