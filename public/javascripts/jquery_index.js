@@ -1,4 +1,10 @@
 $(document).ready(()=>{
+
+    function v(){
+        alert("Hello")
+    }
+
+    v()
     
     // Scroll to div for this page
     $(".ul-sitemap-portfolio li:nth-child(2)").on("click", ()=>{
