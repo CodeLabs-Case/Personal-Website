@@ -88,6 +88,8 @@ body {
     justify-self: center;
 }
 .animatecover {
+    height: 150px;
+    
     background-color: #000000;
 
     grid-row: 2;
