@@ -71,7 +71,7 @@ app.use(require('./routes'))
 
 
 // I have set the port to 8080 as an Environment Variable in AWS and that is what is read into this variable and used.
-const port = process.env.port ||  4000
+const port = process.env.port ||  3000
 
 
 
