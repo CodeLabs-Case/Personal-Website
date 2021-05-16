@@ -10,11 +10,11 @@ const path = require('path')
 
 // Because dotenv won't work in the production code and will make the server not run, check to make sure ...
 // ... that you are in the development version
-if(process.env.NODE_ENV !== 'production'){
-    require('dotenv').config()
-}
-const stripSecretKey = process.env.STRIPE_SECRET_KEY
-const stripPublicKey = process.env.STRIPE_PUBLIC_KEY
+// if(process.env.NODE_ENV !== 'production'){
+//     require('dotenv').config()
+// }
+// const stripSecretKey = process.env.STRIPE_SECRET_KEY
+// const stripPublicKey = process.env.STRIPE_PUBLIC_KEY
 
 
 
