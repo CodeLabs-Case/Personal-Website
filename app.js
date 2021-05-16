@@ -25,9 +25,9 @@ const app = express()
 // This is the new way of parseing JSON instead of using body-parser
 // app.use(express.json());
 // This is the old way of parseing JSON with body-parser
-const bodyParser = require("body-parser");
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// const bodyParser = require("body-parser");
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
 
 
 
