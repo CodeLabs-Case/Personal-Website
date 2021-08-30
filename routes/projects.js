@@ -12,7 +12,7 @@ router.route('/').get((req, res, err)=>{
     // This is how I had to set the path to work in this seperate file.
     // However, EJS will be used in future so this may be temporary.
     // Remote Path
-    res.render(path.join('/var/app/current/views/projects.ejs'))
+    res.render(path.join('/home/davis_architect99/Personal-Website/views/projects.ejs'))
 
     // Local Path
     // res.render('C:/Users/davis/OneDrive/Documents/Development/ProJavaScript/test4elastic0/views/projects.ejs')
