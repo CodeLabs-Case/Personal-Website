@@ -23,6 +23,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 .down-wrapper p {
+    font-size: 50px;
     color: #FFFFFF;
 
     grid-row: 1;
