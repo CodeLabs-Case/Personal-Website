@@ -37,4 +37,7 @@
 
     justify-self: center;
     align-self: center;
+
+    max-height: 50%;
+    max-width: 50%;
 }
