@@ -13,7 +13,7 @@ router.route('/').get((req, res, err)=>{
     const host = req.headers.host
 
     if(host === 'localhost:3000') {
-        res.render('C:/Users/davis/OneDrive/Documents/Development/ProJavaScript/test4elastic0/views/home.ejs')
+        res.render('C:/Users/davis/OneDrive/Documents/Development/ProJavaScript/Personal-Website/views/home-main.ejs')
     } else {
         res.render(path.join('/var/app/current/views/home.ejs'))
     }
