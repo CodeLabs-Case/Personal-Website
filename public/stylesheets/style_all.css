@@ -38,6 +38,7 @@ body {
 
 
 
+
 /* Header */
 /* Code for the top of the page that is used for the main logo and the navigation bar */
 .div-mainheader {
@@ -184,7 +185,9 @@ body {
 }
 
 
-
+/* Body Cont. */
+/* This contains styling for each for the 3 main sections on each page and also ...
+... styling for their horizontal subsections of text and image. */
 [class^="div-body-container"] {
     height: 720px;
     width: 100%;

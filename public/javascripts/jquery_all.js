@@ -1,6 +1,8 @@
 $(document).ready(()=>{
   // Force the page to jump to the top on load/reload
-  $(this).scrollTop(0);
+  // I have disabled it as it interferes with  the URL fragment that is used to offset the viewport ...
+  // ... when the user has come to the page from the footer nav
+  //$(this).scrollTop(0);
 
 
 
