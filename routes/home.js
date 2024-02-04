@@ -9,13 +9,11 @@ router.route('/').get((req, res, err)=>{
         console.log(err)
     }
 
-    // This is how I had to set the path to work in this seperate file.
-    // However, EJS will be used in future so this may be temporary.
-    // Remote Path
-    res.render(path.join('/var/app/current/views/home.ejs'))
-
-    // Local Path
-    // res.render('C:/Users/davis/OneDrive/Documents/Development/ProJavaScript/test4elastic0/views/home.ejs')
+    if(host === 'localhost:3000') {
+        res.render('C:/Users/davis/OneDrive/Documents/Development/ProJavaScript/test4elastic0/views/home.ejs')
+    } else {
+        res.render(path.join('/var/app/current/views/home.ejs'))
+    }
 })
 
 
