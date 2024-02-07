@@ -28,9 +28,9 @@ $(document).ready(()=>{
 
   // This is all code to make the navbar become static after the user has scrolled to and passed it
   var navbar = $(".div-navbar");
-  var navbarPlaceHolder = $(".navbar-placeholder")
-  navbarPlaceHolder.css({ "height": "0px" })
-  var navbarLocation = navbar.offset().top;
+  var navbarPlaceHolder = $(".navbar-placeholder"); // Need a placeholder to avoid elements jumping up when nabar is fixed
+  navbarPlaceHolder.css({ "height": "0px" });
+  
 
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
@@ -45,45 +45,22 @@ $(document).ready(()=>{
     } else {
       navbar.css({
         "position": "static",
-        "width": "100%"
-      }).animate({ backgroundColor: 'black', borderColor: 'white' }, { duration: 300, queue: false });
+      }).animate({ backgroundColor: 'black', borderColor: 'white' }, { duration: 100, queue: false });
       $("#navbar-placeholder").css("height", 0); // Reset height of placeholder
     }
   });
   // Location of navbar: 227 from top
-  //var navbarlocation = $(".div-navbar").offset().top
+  var navbarlocation = $(".div-navbar").offset().top
   // .scrollTop() will return how far an object is from the top of the page, even the window object
-  //var windowlocation = $(window).scrollTop()
+  var windowlocation = $(window).scrollTop()
   
-  /*
-  $(window).scroll(()=>{
-    windowlocation = $(window).scrollTop()
-
-    if(navbarlocation <= windowlocation){
-      $(".div-navbar").css("position", "fixed")
-      $(".div-navbar").css("top", "0px")
-      // Having to 8px away seems like a hack, but it works. Look for another solution.
-      $(".div-navbar").css("right", "8px")
-      $(".div-navbar").css("left", "8px")
-
-      // Make the navbar float above all of the other elements
-      $(".div-navbar").css("z-index", "1")
-    }
-    else{
-      $(".div-navbar").css("position", "static")
-
-      // Make the navbar float above all of the other elements
-      $(".div-navbar").css("z-index", "1")
-    }
-  })
-  */  
 
 
 
   
-
   /// This is the code that will cause the opacity to lower as the image and the page is scrolled further down ...
   // ... it is a simple mathematic proportion reduced by a factor of 100
+  var navbarLocation = navbar.offset().top;
   $(window).scroll(()=>{
     windowlocation = $(window).scrollTop()
     // navbarlocation is retrieved globally above
@@ -141,7 +118,7 @@ $(document).ready(()=>{
   if ((bottom_of_screen > top_of_element1) && (top_of_screen < bottom_of_element1)){
     // Is within viewport
     if(element1.css("opacity") == 0){
-      element1.animate({"opacity": "1", "marginTop": "0px"}, {duration: 750, queue: false})
+      element1.animate({opacity: 1, marginTop: 0}, {duration: 750, queue: false})
     }
   } else {
     if(element1.css("opacity") != 0){
@@ -193,7 +170,7 @@ $(document).ready(()=>{
 
 
   // This is the code that will make the text appear when the user scrolls over the elements
-  $(window).scroll(function() {
+  $(window).scroll(()=>{
     // Checks for element all 1
     top_of_element1 = element1.offset().top;
     bottom_of_element1 = element1.offset().top + element1.outerHeight();
@@ -216,7 +193,7 @@ $(document).ready(()=>{
     }
   });
 
-  $(window).scroll(function() {
+  $(window).scroll(()=>{
     // Checks for element all 2
     top_of_element2 = element2.offset().top;
     bottom_of_element2 = element2.offset().top + element2.outerHeight();
@@ -237,7 +214,7 @@ $(document).ready(()=>{
     }
   });
 
-  $(window).scroll(function() {
+  $(window).scroll(()=>{
     // Checks for all element 3
     top_of_element3 = element3.offset().top;
     bottom_of_element3 = element3.offset().top + element3.outerHeight();
