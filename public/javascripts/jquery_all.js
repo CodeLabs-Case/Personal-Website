@@ -27,10 +27,34 @@ $(document).ready(()=>{
 
 
   // This is all code to make the navbar become static after the user has scrolled to and passed it
+  var navbar = $(".div-navbar");
+  var navbarPlaceHolder = $(".navbar-placeholder")
+  navbarPlaceHolder.css({ "height": "0px" })
+  var navbarLocation = navbar.offset().top;
+
+  $(window).scroll(function() {
+    var scrollPos = $(window).scrollTop();
+
+    if (scrollPos >= navbarLocation) {
+      navbar.css({
+        "position": "fixed",
+        "top": "0",
+        "width": "100%"
+      }).animate({ backgroundColor: '#111', borderColor: 'black'  }, { duration: 100, queue: false });
+      $("#navbar-placeholder").css("height", navbar.outerHeight()); // Adjust height of placeholder
+    } else {
+      navbar.css({
+        "position": "static",
+        "width": "100%"
+      }).animate({ backgroundColor: 'black', borderColor: 'white' }, { duration: 300, queue: false });
+      $("#navbar-placeholder").css("height", 0); // Reset height of placeholder
+    }
+  });
   // Location of navbar: 227 from top
-  var navbarlocation = $(".div-navbar").offset().top
+  //var navbarlocation = $(".div-navbar").offset().top
   // .scrollTop() will return how far an object is from the top of the page, even the window object
-  var windowlocation = $(window).scrollTop()
+  //var windowlocation = $(window).scrollTop()
+  
   /*
   $(window).scroll(()=>{
     windowlocation = $(window).scrollTop()
@@ -95,9 +119,11 @@ $(document).ready(()=>{
   var top_of_element1
   var top_of_element2
   var top_of_element3
+  
   var bottom_of_element1
   var bottom_of_element2
   var bottom_of_element3
+
   var bottom_of_screen
   var top_of_screen
 
