@@ -132,6 +132,14 @@ body {
 
     /* margin-top: 100px; */
 }
+.ul-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-start; /* This ensures that items start from the left */
+    list-style-type: none; /* Removes the bullet points */
+    padding-left: 50px;
+}
 .ul-navbar li {
     color: #FFFFFF;
     font-family: Calibri, sans-serif;
@@ -153,9 +161,22 @@ body {
 .ul-navbar li a:hover {
     filter: brightness(0.5);
 }
-
-
-
+.ul-navbar [class^='navbar-title-'] {
+    margin-left: auto; /* This pushes the item to the right */
+    /* margin-right: 80px; */
+}
+[class^='navbar-title-'] {
+    position: absolute;
+    right: 0; /* Aligns the stacked items to the right */
+    top: 0; /* Start stacking from the top */
+    z-index: 1; /* Start with a base z-index */
+}
+[class^='navbar-title-']:nth-child(5) {
+    z-index: 2; /* Adjust z-index to stack on top */
+}
+[class^='navbar-title-']:nth-child(6) {
+    z-index: 3; /* Each subsequent item has a higher z-index */
+}
 
 
 

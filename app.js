@@ -4,7 +4,7 @@ const path = require('path')
 // const mongo = require('mongodb')
 // const cors = require('cors')
 
-// require('dotenv').config()
+require('dotenv').config();
 
 
 
@@ -71,7 +71,7 @@ app.use(require('./routes'))
 
 
 // I have set the port to 8080 as an Environment Variable in AWS and that is what is read into this variable and used.
-const port = process.env.port ||  3000
+const port = process.env.PORT ||  3000
 
 
 

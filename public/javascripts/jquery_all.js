@@ -8,7 +8,6 @@ $(document).ready(()=>{
 
 
 
-
   // Configure the settings for the animation cover
   // This will cause the black cover div over the main logo to fit it and then shrink in height ...
   // ... which will make it appear as though the logo is being painted on from bottom to top on page ...
@@ -30,7 +29,6 @@ $(document).ready(()=>{
   var navbar = $(".div-navbar");
   var navbarPlaceHolder = $(".navbar-placeholder"); // Need a placeholder to avoid elements jumping up when nabar is fixed
   navbarPlaceHolder.css({ "height": "0px" });
-  
 
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
@@ -40,12 +38,12 @@ $(document).ready(()=>{
         "position": "fixed",
         "top": "0",
         "width": "100%"
-      }).animate({ backgroundColor: '#111', borderColor: 'black'  }, { duration: 100, queue: false });
+      }).animate({ backgroundColor: '#111', borderColor: 'black', opacity: 0.8  }, { duration: 100, queue: false });
       $("#navbar-placeholder").css("height", navbar.outerHeight()); // Adjust height of placeholder
     } else {
       navbar.css({
         "position": "static",
-      }).animate({ backgroundColor: 'black', borderColor: 'white' }, { duration: 100, queue: false });
+      }).animate({ backgroundColor: 'black', borderColor: 'white', opacity: 1 }, { duration: 100, queue: false });
       $("#navbar-placeholder").css("height", 0); // Reset height of placeholder
     }
   });
@@ -169,7 +167,17 @@ $(document).ready(()=>{
 
 
 
-  // This is the code that will make the text appear when the user scrolls over the elements
+
+  // This is the code that will make the text appear when the user scrolls over the elements, as well as the navbar title
+  var title_element1 = $(".navbar-title-1")
+  var title_element2 = $(".navbar-title-2")
+  var title_element3 = $(".navbar-title-3")
+
+  // Initially set them all off to the right most position on page load
+  title_element1.css({"marginRight": "200px", "opacity": 0})
+  title_element2.css({"marginRight": "200px", "opacity": 0})
+  title_element3.css({"marginRight": "200px", "opacity": 0})
+
   $(window).scroll(()=>{
     // Checks for element all 1
     top_of_element1 = element1.offset().top;
@@ -183,12 +191,15 @@ $(document).ready(()=>{
       // Is within viewport
       if(element1.css("opacity") == 0){
         element1.animate({"opacity": "1", "marginTop": "0px"}, {duration: 750, queue: false})
+        title_element1.animate({"marginRight": "40px", "opacity": 1}, {duration: 750, queue: false})
       }
     } else {
       if(element1.css("opacity") != 0){
         // Is NOT within viewport
         var scroll = $(window).scrollTop();
         element1.css({"opacity": "0", "marginTop": "100px"})
+        // title_element1.animate({"marginRight": "100px", "opacity": 0}, {queue: false})
+        title_element1.css({"marginRight": "100px", "opacity": 0})
       }
     }
   });
@@ -205,11 +216,14 @@ $(document).ready(()=>{
       // Is within viewport
       if(element2.css("opacity") == 0){
         element2.animate({"opacity": "1", "marginTop": "0px"}, {duration: 750, queue: false})
+        title_element2.animate({"marginRight": "40px", "opacity": 1}, {duration: 750, queue: false})
       }
     } else {
       // Is NOT within viewport
       if(element2.css("opacity") != 0){
         element2.css({"opacity": "0", "marginTop": "100px"})
+        // title_element2.animate({"marginRight": "100px", "opacity": 0}, {queue: false})
+        title_element2.css({"marginRight": "100px", "opacity": 0})
       }
     }
   });
@@ -227,14 +241,18 @@ $(document).ready(()=>{
       // Is within viewport
       if(element3.css("opacity") == 0){
         element3.animate({"opacity": "1", "marginTop": "0px"}, {duration: 750, queue: false})
+        title_element3.animate({"marginRight": "40px", "opacity": 1}, {duration: 750, queue: false})
       }
     } else {
       if(element3.css("opacity") != 0){
         // Is NOT within viewport
         element3.css({"opacity": "0", "marginTop": "100px"})
+        // title_element3.animate({"marginRight": "100px", "opacity": 0}, {queue: false})
+        title_element3.css({"marginRight": "100px", "opacity": 0})
       }
     }
   });
+
 
 
 
