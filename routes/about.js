@@ -15,7 +15,7 @@ router.route('/').get((req, res, err)=>{
     if(host === 'localhost:3000') {
         res.render('C:/Users/davis/OneDrive/Documents/Development/ProJavaScript/Personal-Website/views/about.ejs')
     } else {
-        res.render(path.join('/var/app/current/views/home.ejs'))
+        res.render(path.join('/opt/bitnami/apache/htdocs/Personal-Website/views/about.ejs'))
     }
 })
 
