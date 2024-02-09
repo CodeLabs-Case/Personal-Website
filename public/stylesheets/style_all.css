@@ -547,6 +547,7 @@ body {
         height: 360px;
         background-color: #000000;
         color: #FFFFFF;
+        width: 100%;
     
         grid-row: 1;
         grid-column: 1;
