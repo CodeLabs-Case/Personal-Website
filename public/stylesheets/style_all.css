@@ -184,8 +184,8 @@ body {
 /* Swiper styling */
 .swiper-container {
     position: relative;
-    width: 100%;
-    max-width: 100%;
+    /* width: 100%;
+    max-width: 100%; */
     height: 720px;
 }
 .swiper-wrapper {
@@ -739,6 +739,9 @@ body {
 
 /* Ultra-Thin Mobile Phones */
 @media only screen and (max-width: 360px) {
+    .main {
+        min-width: 0;
+    }
     /* Header */
     .div-img {
         height: 150px;
