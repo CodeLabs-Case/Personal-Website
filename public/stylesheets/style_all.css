@@ -557,7 +557,7 @@ body {
         align-items: center;
         font-size: 60px;
 
-        width: auto;
+        /* width: auto; */
 
         grid-row: 1;
         grid-column: 1;    
@@ -844,7 +844,7 @@ body {
         align-items: center;
         font-size: 60px;
 
-        width: auto;
+        /* width: auto; */
 
         grid-row: 1;
         grid-column: 1;    
