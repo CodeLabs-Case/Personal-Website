@@ -541,6 +541,8 @@ body {
     /* Body */
     .swiper-container {
         height: 360px;
+        width: 100%;
+        max-width: 100%;
     }
 
     [class^="div-body-container"] {
@@ -795,6 +797,11 @@ body {
 
 
     /* Body */
+    .swiper-container {
+        height: 360px;
+        width: 100%;
+        max-width: 100%;
+    }
     [class^='div-container-text'] h1 {
         text-align: center;
         font-size: 18px;
