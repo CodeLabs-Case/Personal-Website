@@ -499,6 +499,14 @@ body {
 /********** BREAKPOINTS **********/
 /* Average Mobile Phones */
 @media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+
+
+
+
     /* Header */
     .a-label{
         color: #FFFFFF;
@@ -739,6 +747,14 @@ body {
 
 /* Ultra-Thin Mobile Phones */
 @media only screen and (max-width: 360px) {
+    body {
+        overflow-x: hidden;
+    }
+
+
+
+
+    
     /* Header */
     .div-img {
         height: 150px;
