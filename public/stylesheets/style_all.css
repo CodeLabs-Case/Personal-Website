@@ -500,6 +500,8 @@ body {
 /* Average Mobile Phones */
 @media only screen and (max-width: 600px) {
     body {
+        padding: 0px;
+        margin: 0px;
         overflow-x: hidden;
     }
 
@@ -748,13 +750,15 @@ body {
 /* Ultra-Thin Mobile Phones */
 @media only screen and (max-width: 360px) {
     body {
+        padding: 0px;
+        margin: 0px;
         overflow-x: hidden;
     }
 
 
 
 
-    
+
     /* Header */
     .div-img {
         height: 150px;
