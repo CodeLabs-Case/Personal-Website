@@ -91,6 +91,10 @@ $(document).ready(()=>{
   var element2 = $("[class^=div-container-text2-]")
   var element3 = $("[class^=div-container-text3-]")
 
+  var notLoadedelement1 = true
+  var notLoadedelement2 = true
+  var notLoadedelement3 = true
+
   var top_of_element1
   var top_of_element2
   var top_of_element3
@@ -118,11 +122,6 @@ $(document).ready(()=>{
     if(element1.css("opacity") == 0){
       element1.animate({opacity: 1, marginTop: 0}, {duration: 750, queue: false})
     }
-  } else {
-    if(element1.css("opacity") != 0){
-      // Is NOT within viewport
-      element1.css({"opacity": "0", "marginTop": "100px"})
-    }
   }
 
   // Checks for element 2_x
@@ -136,11 +135,6 @@ $(document).ready(()=>{
     // Is within viewport
     if(element2.css("opacity") == 0){
       element2.animate({"opacity": "1", "marginTop": "0px"}, {duration: 750, queue: false})
-    }
-  } else {
-    // Is NOT within viewport
-    if(element2.css("opacity") != 0){
-      element2.css({"opacity": "0", "marginTop": "100px"})
     }
   }
 
@@ -156,11 +150,6 @@ $(document).ready(()=>{
     // Is within viewport
     if(element3.css("opacity") == 0){
       element3.animate({"opacity": "1", "marginTop": "0px"}, {duration: 750, queue: false})
-    }
-  } else {
-    if(element3.css("opacity") != 0){
-      // Is NOT within viewport
-      element3.css({"opacity": "0", "marginTop": "100px"})
     }
   }
 
@@ -187,19 +176,12 @@ $(document).ready(()=>{
     top_of_screen = $(window).scrollTop();
     
     // Conditionals for all element 1
-    if ((bottom_of_screen > top_of_element1) && (top_of_screen < bottom_of_element1)){
+    if ((bottom_of_screen > top_of_element1) && (top_of_screen < bottom_of_element1) && notLoadedelement1){
+      notLoadedelement1 = false
       // Is within viewport
       if(element1.css("opacity") == 0){
         element1.animate({"opacity": "1", "marginTop": "0px"}, {duration: 750, queue: false})
         title_element1.animate({"marginRight": "40px", "opacity": 1}, {duration: 750, queue: false})
-      }
-    } else {
-      if(element1.css("opacity") != 0){
-        // Is NOT within viewport
-        var scroll = $(window).scrollTop();
-        element1.css({"opacity": "0", "marginTop": "100px"})
-        // title_element1.animate({"marginRight": "100px", "opacity": 0}, {queue: false})
-        title_element1.css({"marginRight": "100px", "opacity": 0})
       }
     }
   });
@@ -212,18 +194,12 @@ $(document).ready(()=>{
     top_of_screen = $(window).scrollTop();
   
     // Conditionals for all element 2
-    if ((bottom_of_screen > top_of_element2) && (top_of_screen < bottom_of_element2)){
+    if ((bottom_of_screen > top_of_element2) && (top_of_screen < bottom_of_element2) && notLoadedelement2){
+      notLoadedelement2 = false
       // Is within viewport
       if(element2.css("opacity") == 0){
         element2.animate({"opacity": "1", "marginTop": "0px"}, {duration: 750, queue: false})
         title_element2.animate({"marginRight": "40px", "opacity": 1}, {duration: 750, queue: false})
-      }
-    } else {
-      // Is NOT within viewport
-      if(element2.css("opacity") != 0){
-        element2.css({"opacity": "0", "marginTop": "100px"})
-        // title_element2.animate({"marginRight": "100px", "opacity": 0}, {queue: false})
-        title_element2.css({"marginRight": "100px", "opacity": 0})
       }
     }
   });
@@ -237,22 +213,15 @@ $(document).ready(()=>{
     top_of_screen = $(window).scrollTop();
   
     // Conditionals for all element3
-    if ((bottom_of_screen > top_of_element3) && (top_of_screen < bottom_of_element3)){
+    if ((bottom_of_screen > top_of_element3) && (top_of_screen < bottom_of_element3) && notLoadedelement3){
+      notLoadedelement3 = false
       // Is within viewport
       if(element3.css("opacity") == 0){
         element3.animate({"opacity": "1", "marginTop": "0px"}, {duration: 750, queue: false})
         title_element3.animate({"marginRight": "40px", "opacity": 1}, {duration: 750, queue: false})
       }
-    } else {
-      if(element3.css("opacity") != 0){
-        // Is NOT within viewport
-        element3.css({"opacity": "0", "marginTop": "100px"})
-        // title_element3.animate({"marginRight": "100px", "opacity": 0}, {queue: false})
-        title_element3.css({"marginRight": "100px", "opacity": 0})
-      }
     }
   });
-
 
 
 
