@@ -496,3 +496,351 @@ body {
 
 
 
+/********** BREAKPOINTS **********/
+/* Average Mobile Phones */
+@media only screen and (max-width: 600px) {
+    /* Header */
+    .a-label{
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: Arial, Verdana, geneva, sans-sarif;
+        opacity: 0.8;
+    
+        grid-row: 1;
+        grid-column: 2;
+    
+        justify-self: center;
+    
+        text-decoration: none;
+    }
+    .ul-navbar li{
+        color: #FFFFFF;
+        font-family: Calibri, sans-serif;
+        font-size: 16px;
+
+        margin: 10px;
+
+        display: inline-block;
+        cursor: default;
+    }
+
+
+
+    
+
+    /* Body */
+    .swiper-container {
+        height: 360px;
+    }
+
+    [class^="div-body-container"] {
+        height: 360px;
+        background-color: #000000;
+        color: #FFFFFF;
+    
+        grid-row: 1;
+        grid-column: 1;
+    
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    [class^='div-container-text']  {
+        text-align: center;
+
+        z-index: 1;
+    }
+    [class^='div-container-text'] h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+    [class^='div-container-text'] p {
+        justify-self: center;
+        text-align: center;
+        font-size: 14px;
+
+        width: 300px;
+    }
+    [class^='div-container-text1-'] {
+        grid-row: 1;
+        grid-column: 1;
+    
+        align-self: center;
+        justify-self: center;
+    
+        opacity: 0;
+    
+        margin-top: 100px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    [class^='div-container-text2-'] {
+        grid-row: 1;
+        grid-column: 1;
+    
+        align-self: center;
+        justify-self: center;
+    
+        opacity: 0;
+    
+        margin-top: 100px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+    [class^='div-container-text3-'] {
+        grid-row: 1;
+        grid-column: 1;
+    
+        align-self: center;
+        justify-self: center;
+    
+        opacity: 0;
+    
+        margin-top: 100px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    [class^='div-body-container'] img {
+        max-width: 100%;
+        height: auto;
+
+        grid-row: 1;
+        grid-column: 1;
+        z-index: 0;
+
+        opacity: 0.3;
+
+        justify-self: center;
+        align-self: center;
+    }
+    [class^='div-container-img1-'] {
+        display: none;
+    }
+    [class^='div-container-img2-'] {
+        display: none;
+    }
+    [class^='div-container-img3-'] {
+        display: none;
+    }
+    [class^='div-container-img1-'] img{
+        display: none;
+    }
+    [class^='div-container-img2-'] img{
+        display: none;
+    }
+    [class^='div-container-img3-'] img{
+        display: none;
+    }
+    
+
+
+
+
+
+    /* Footer */
+    .div-footer{
+        background-color: #000000;
+    
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-width: 1px;
+        /* border-left: hidden;
+        border-right: hidden; */
+    
+        margin-top: 10px;
+        padding: 10px;
+    
+        display: grid;
+        grid-template-rows: 40px 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .div-footer-sub1{
+        background-color: #FFFFFF;
+
+        border-style: solid;
+        border-color: #000000;
+        border-width: 1px;
+
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .div-footer-sub2{
+        background-color: #000000;
+    
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-width: 1px;
+    
+        grid-row: 2;
+        grid-column: 1;
+    
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    [class^="ul-sitemap-"] li:nth-child(1){
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    [class^="ul-sitemap-"] li:nth-child(2){
+        font-size: 16px;
+    }
+    [class^="ul-sitemap-"] li:nth-child(3){
+        font-size: 16px;
+    }
+    [class^="ul-sitemap-"] li:nth-child(4){
+        font-size: 16px;
+    }
+    .ul-sitemap-portfolio{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .ul-sitemap-projects{
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .ul-sitemap-education{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .ul-sitemap-about{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .ul-linkslist{
+        list-style-type: none;
+    
+        grid-row: 2;
+        grid-column: 3;
+    
+        align-self: center;
+        justify-self: center;
+    }
+    .ul-linkslist li{
+        margin: 5px;
+        float: left;
+    }
+    .ul-linkslist li:nth-child(1){
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: calibri, cambria, sans;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Ultra-Thin Mobile Phones */
+@media only screen and (max-width: 360px) {
+    /* Header */
+    .div-img {
+        height: 150px;
+        width: 300px;
+        background-color: #000000;
+    
+        grid-column: 2;
+        grid-row: 2;
+    
+        display: grid;
+    
+        grid-template-rows: 0.5fr 1.5fr 0.5fr;
+        grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    
+        margin-bottom: 4em;
+    
+        align-self: center;
+        justify-self: center;
+    }
+    .ul-navbar li {
+        color: #FFFFFF;
+        font-family: Calibri, sans-serif;
+        font-size: 10px;
+    
+        margin: 10px;
+    
+        display: inline-block;
+        cursor: default;
+    }
+
+
+
+
+
+    /* Body */
+    [class^='div-container-text'] h1 {
+        text-align: center;
+        font-size: 18px;
+    }
+    [class^='div-container-text'] p {
+        justify-self: center;
+        text-align: center;
+        font-size: 10px;
+
+        width: 200px;
+    }
+
+
+
+
+
+    /* Footer */
+    .div-footer-sub2{
+        background-color: #000000;
+    
+        border-style: solid;
+        border-color: #FFFFFF;
+        border-width: 1px;
+    
+        grid-row: 2;
+        grid-column: 1;
+    
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .ul-sitemap-portfolio{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .ul-sitemap-projects{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .ul-sitemap-education{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .ul-sitemap-about{
+        grid-row: 4;
+        grid-column: 1;
+    }
+    [class^="ul-sitemap-"] li:nth-child(1){
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    [class^="ul-sitemap-"] li:nth-child(2){
+        font-size: 10px;
+    }
+    [class^="ul-sitemap-"] li:nth-child(3){
+        font-size: 10px;
+    }
+    [class^="ul-sitemap-"] li:nth-child(4){
+        font-size: 10px;
+    }
+    .ul-linkslist{
+        list-style-type: none;
+    
+        grid-row: 5;
+        grid-column: 1;
+    
+        align-self: center;
+        justify-self: center;
+    }
+}
