@@ -193,7 +193,7 @@ body {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    overflow-x: hidden;
+    
 }
 .swiper-slide {
     background: #000000;
